@@ -1,11 +1,11 @@
-import 'package:dice_app/white_text.dart';
+import 'package:dice_app/dice_roller.dart';
 import 'package:flutter/material.dart';
 
 var startAlignment = Alignment.topLeft;
 var endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.firstColor, this.secondColor, {super.key});
+  GradientContainer(this.firstColor, this.secondColor, {super.key});
 
   final Color firstColor;
   final Color secondColor;
@@ -19,8 +19,8 @@ class GradientContainer extends StatelessWidget {
           secondColor,
         ], begin: startAlignment, end: endAlignment),
       ),
-      child: const Center(
-        child: WhiteText('Hello Wordl!'),
+      child: Center(
+        child: DiceRoller(),
       ),
     );
     //this is a comment
